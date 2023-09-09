@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div id="contenedor">
+            <div id="calculadora">
+                <div class="contenido">
+                    <h1>Hidratación Basal</h1>
+                    <p class="item">Rellene todos los datos requeridos</p>
+                    <input class="item" id="peso" type="number" placeholder="Escriba el peso en kilogramos" />
+                    <p class="item" id="error">* Debe completar todos los datos</p>
+                    <button class="item" id="calcular">Calcular</button>
+                    <p class="item resultado" id="flu">71cc/h</p>
+                    <p class="item resultado" id="man">m+m/2 : 105cc/h</p>
+                </div>
+            </div>
+            <div id="detalle">
+                <div class="contenido">
+                    <h1>¿Como se calcula?</h1>
+                    <ul>
+                        <li>De 0 A 10 kilogramos, se calcula 100 centímetros cúbicos por cada kilogramo.</li>
+                        <li>De 10 hasta 20 kilogramos, se le suman 50 centímetros cúbicos por cada kilogramo de peso</li>
+                        <li>A partir de 20 kilogramos en adelante se le suman 20 centímetros cúbicos por cada kilo de peso adicional</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
