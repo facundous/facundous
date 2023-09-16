@@ -1,32 +1,28 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="./style.css">
-        <script src="script.js" defer></script>
-    </head>
-    <body>
-        <div id="contenedor">
-            <div id="calculadora">
-                <div class="contenido">
-                    <h1>Hidratación Basal</h1>
-                    <p class="item">Rellene todos los datos requeridos</p>
-                    <input class="item" id="peso" type="number" placeholder="Escriba el peso en kilogramos" />
-                    <p class="item" id="error">* Debe completar todos los datos</p>
-                    <button class="item" id="calcular">Calcular</button>
-                    <p class="item resultado" id="flu">71cc/h</p>
-                    <p class="item resultado" id="man">m+m/2 : 105cc/h</p>
-                </div>
-            </div>
-            <div id="detalle">
-                <div class="contenido">
-                    <h1>¿Como se calcula?</h1>
-                    <ul>
-                        <li>De 0 A 10 kilogramos, se calcula 100 centímetros cúbicos por cada kilogramo.</li>
-                        <li>De 10 hasta 20 kilogramos, se le suman 50 centímetros cúbicos por cada kilogramo de peso</li>
-                        <li>A partir de 20 kilogramos en adelante se le suman 20 centímetros cúbicos por cada kilo de peso adicional</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traductor de Español- Guaraní</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        body {
+            background-image: url("fondo.jpg");
+            background-size: 100% 100%; 
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <h1><i>Traductor de Español- Guaraní</i></h1>
+    <div class="translator">
+        <textarea id="inputText" placeholder="Escribe la palabra a traducir: "></textarea>
+        <button id="translateButton">Traducir</button>
+        <div id="outputText"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
